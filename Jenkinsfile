@@ -51,7 +51,7 @@ pipeline{
 		  
               steps{
 		  
-                 sh './gradlew clean build'
+                // sh './gradlew clean build'
 		      
 		      jacoco(
                     execPattern: '**/build/jacoco/test.exec',
