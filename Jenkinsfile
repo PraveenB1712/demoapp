@@ -53,11 +53,12 @@ pipeline{
 		  
                 // sh './gradlew clean build'
 		      
-		      jacoco(
-                    execPattern: '**/build/jacoco/test.exec',
-                    classPattern: '**/build/classes/java/main',
-                    sourcePattern: '**/src/main/java'
-                     )
+		      jacoco inclusionPattern: '/var/lib/jenkins/workspace/demoapp/target/classes', maximumInstructionCoverage: '20', minimumInstructionCoverage: '20', runAlways: true
+		   //   jacoco(
+                    //execPattern: '**/build/jacoco/test.exec',
+                    //classPattern: '**/build/classes/java/main',
+                    //sourcePattern: '**/src/main/java'
+                     //)
 		      
 		      
                 }
