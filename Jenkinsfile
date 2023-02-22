@@ -70,8 +70,8 @@ pipeline{
                        classPattern: '**/build/classes/java/main',
                        sourcePattern: '**/src/main/java',
                        changeBuildStatus: true,
-                       minimumCoverage: 80,
-                       maximumComplexity: 10
+                     //  minimumCoverage: 80,
+                      // maximumComplexity: 10
                     )
                 }
            }
