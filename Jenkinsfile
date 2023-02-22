@@ -53,6 +53,7 @@ pipeline{
                     sh script: ' echo 'docker hub login successfull''
 	            sh script: 'docker build --file Dockerfile --tag docker.io/praveenbiradar1/demoapp:$BUILD_NUMBER .'
                     sh script: 'docker push docker.io/praveenbiradar1/demoapp:$BUILD_NUMBER'
+			    
               }
           }
 	     
