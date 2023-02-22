@@ -1,10 +1,12 @@
 pipeline{
-    tools{
+    tools
+	{
         jdk 'myjava'
         maven 'mymaven'
     }
 	agent any
-      stages{
+      stages
+	  {
            stage('Checkout'){
 	    
                steps{
@@ -59,4 +61,5 @@ pipeline{
 	     
           
       }
+}
 }
