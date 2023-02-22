@@ -52,7 +52,7 @@ pipeline{
 		  
                     withDockerRegistry(credentialsId: 'DOCKER_HUB_LOGIN', url: 'https://index.docker.io/v1/') {
                     sh script: 'cd  $WORKSPACE'
-                    sh script: ' echo 'docker hub login successfull''
+                   //sh script: ' echo 'docker hub login successfull''
 	            sh script: 'docker build --file Dockerfile --tag docker.io/praveenbiradar1/demoapp:$BUILD_NUMBER .'
                     sh script: 'docker push docker.io/praveenbiradar1/demoapp:$BUILD_NUMBER'
 			    
